@@ -5,10 +5,12 @@
 ## Tutorial
 
 1. Check Game Assist installation
+
     <img alt="Image" src="./img/Capture1.PNG" style="height: 50%; width: 50%;" />
 
 2. Open Task Scheduler
     - Press Win + R → type taskschd.msc → press Enter.
+
     <img alt="Image" src="./img/Capture2.PNG" style="height: 50%; width: 50%;" />
 
 3. Create a New Task
@@ -18,11 +20,13 @@
     - Name it: Run fuck-ms.ps1 at startup
     - Check Run with highest privileges.
     - Configure for: select your version of Windows.
+    
     <img alt="Image" src="./img/Capture3.PNG" style="height: 50%; width: 50%;" />
 
 5. Trigger Settings
     - Go to the Triggers tab → click New.
     - Choose At startup → click OK.
+
     <img alt="Image" src="./img/Capture4.PNG" style="height: 50%; width: 50%;" />
 
 6. Action Settings
@@ -31,15 +35,18 @@
     -  Program/script: `powershell.exe`
     - Add arguments: `-ExecutionPolicy Bypass -File "Path\to\your\script\fuck-ms.ps1"`
     - Start in (optional): `Path\to\your\script`
+
     <img alt="Image" src="./img/Capture5.PNG" style="height: 50%; width: 50%;" />
 
 7. Conditions/Settings
     - Uncheck options like “Start the task only if the computer is on AC power” or “Start only if the computer is idle.”
+
     <img alt="Image" src="./img/Capture6.PNG" style="height: 50%; width: 50%;" />
 
 8. Save the Task
     - Click OK
     - Restart your computer to test if the script runs at startup.
+
     <img alt="Image" src="./img/Capture7.PNG" style="height: 50%; width: 50%;" />
 
 ## Script
